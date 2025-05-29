@@ -1,0 +1,267 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navigasi {
+  background-color: #e75480;
+  width: 100%;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  z-index: 1000;
+}
+
+.logo {
+  padding: 20px 0;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu ul li a:hover {
+  color: #f2c1d1;
+  font-style: italic;
+}
+
+
+.banner {
+  background: linear-gradient(135deg, #fbe6ee 0%, #d3e0f3 100%);
+  min-height: 100vh;
+  text-align: center;
+  color: #2b2b2b;
+  padding-top: 160px;
+}
+
+.banner img {
+  border-radius: 100px;
+  height: 100px;
+  border: 6px solid white;
+  margin-top: 20px;
+}
+
+.banner h1 {
+  margin: 10px 0;
+}
+
+.banner button {
+  margin-top: 60px;
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(45deg, #e75480, #f9a1bd);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner button:hover {
+  background: #c9184a;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+h1 span:before {
+  content: '';
+  animation: gerak infinite 8s ease;
+  transform: translateY(50%);
+  color: #e75480;
+  font-size: 70px;
+}
+
+@keyframes gerak {
+  0% { content: 'Selamat Datang'; }
+  50% { content: 'Saya Gilang Nur Prasetyo'; }
+  100% { content: 'Terimakasih Sudah Mampir'; }
+}
+
+
+.box-pendidikan, .box-softskill {
+  min-height: 100vh;
+  background-color: white;
+  text-align: center;
+  color: #333;
+  padding: 160px 20px 60px 20px;
+}
+
+.box-pendidikan h1, .box-softskill h1 {
+  color: #2b2b2b;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  align-items: stretch;
+}
+
+.box {
+  width: 90%;
+  max-width: 300px;
+  min-height: 360px;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.box h3{
+  margin-bottom: 15px;
+}
+
+.box:hover {
+  background-color: #e75480;
+  color: white;
+}
+
+.box img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+
+.kontak {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.kontak-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.kontak img {
+  margin: 40px 0;
+  width: 100px;
+}
+
+.footer-kontak {
+  background-color: #ccc;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.email-link {
+  color: black;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+  .banner img {
+    margin-top: 100px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navigasi {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    padding-top: 10px;
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+  display: block;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e75480;
+    text-align: center;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navigasi {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo {
+    flex: 1;
+  }
+}

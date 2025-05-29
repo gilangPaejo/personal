@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>personal-website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navigasi">
+    <div class="logo">
+      <h2>Biodataku</h2>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="menu">
+      <ul>
+        <li><a href="#Hallo!">Hallo!</a></li>
+        <li><a href="#Pendidikan">Pendidikan</a></li>
+        <li><a href="#Softskill">Softskill</a></li>
+        <li><a href="#Kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="banner" id="Hallo!">
+    <img src="foto/fotoku.jpg" alt="fotoku" />
+    <h1>Hai...<span></span></h1>
+    <p>Salam Hangat Dari Saya dan Semoga Sehat Selalu</p>
+    <a href="#Pendidikan"><button>Selengkapnya</button></a>
+  </div>
+
+  <div class="box-pendidikan" id="Pendidikan">
+    <h1>Riwayat Pendidikan</h1>
+    <div class="flex-container">
+      <div class="box">
+        <img src="foto/sd.png" alt="Sekolah Dasar" />
+        <h3>Sekolah Dasar</h3>
+        <p>"Langkah kecilku dimulai dari SDN Woromarto 1. Di sana aku belajar membaca, menulis, dan bermimpi. Tempat pertama kali aku jatuh, bangkit, dan mengenal arti teman sejati."</p>
+      </div>
+      <div class="box">
+        <img src="foto/smp.png" alt="Sekolah Menengah Pertama" />
+        <h3>Sekolah Menengah Pertama</h3>
+        <p>"Di SMP 1 Purwoasri, aku belajar tentang dunia yang lebih luas. Bukan cuma pelajaran, tapi juga tentang percaya diri, sahabat sejati, dan jatuh cinta pertama kali.</p>
+      </div>
+      <div class="box">
+        <img src="foto/sma.png" alt="Sekolah Menengah Atas" />
+        <h3>Sekolah Menengah Atas</h3>
+        <p>"SMA 1 Purwoasri bukan sekadar sekolah, tapi tempat cerita remaja tumbuh jadi nyata. Tawa, tangis, perjuangan—semua jadi kenangan yang tak akan pernah hilang."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box-softskill" id="Softskill">
+    <h1>Softskill-ku</h1>
+    <div class="flex-container">
+      <div class="box">
+        <img src="foto/kiper.png" alt="Kiper Futsal" />
+        <h3>Kiper Futsal</h3>
+        <p> futsal adalah mencegah bola masuk ke gawang, namun karena futsal dimainkan di lapangan yang lebih kecil dan dengan tempo yang lebih cepat, peran kiper menjadi lebih dinamis dan teknis.</p>
+      </div>
+      <div class="box">
+        <img src="foto/gamer.png" alt="Main EPEP" />
+        <h3>Main EPEP</h3>
+        <p>Saya cukup jago bermain epep itu berlaku cuman waktu yang saya lawan anak kecil,sebenarnya saya ga jago</p>
+      </div>
+      <div class="box">
+        <img src="foto/tidur.png" alt="Tidur" />
+        <h3>Tidur</h3>
+        <p>Saya suka tidur namun saya masih sering juga melakukan pekerjaan rumah jadi jangan bilang saya pemalas</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="kontak" id="Kontak">
+    <div class="kontak-content">
+      <h1>Hubungi Saya</h1>
+      <a href="mailto:gilangbangi647@gmail.com" class="email-link">
+        <img src="foto/email-13762.png" alt="email" />
+        <h2>gilangbangi647@gmail.com</h2>
+      </a>
+    </div>
+    <footer class="footer-kontak">
+      <p>&copy; 2025 Gilang Nur Prasetyo. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
